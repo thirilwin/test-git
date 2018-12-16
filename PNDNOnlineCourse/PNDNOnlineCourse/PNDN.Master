@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PNDN.master.cs" Inherits="PNDNOnlineCourse.PNDN" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .div-style1 {
+            float: right;
+            background-color: white;
+            padding-bottom:20px;
+        }
+        .HyperLyink1 {
+            Font-Size:X-Large;
+            font-style:italic;
+            color:#336699;
+            padding-right:10px;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+ </style>
+ 
+</head>
+<body>
+<div class="div-style1">
+   <asp:Label ID="lblUserName" runat="server" Text="" CssClass="HyperLyink1"></asp:Label>
+    &nbsp;
+<asp:HyperLink ID="HyperLyink1" runat="server" NavigateUrl="~/Login.aspx" CssClass="HyperLyink1">Log In</asp:HyperLink> 
+   |&nbsp;
+<asp:HyperLink ID="HyperLink2" runat="server" BackColor="#006699" BorderStyle="None" Font-Size="X-Large" ForeColor="White" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+</div>
+<div style="width:100%">
+<br />
+<img alt="E-Learning" src="Images/e-learning-banner.jpg" style="height:200px; width: 100%" />
+</div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
